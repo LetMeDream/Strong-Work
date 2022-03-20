@@ -1,0 +1,194 @@
+*{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+body{
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden; /* This need to be modified at some point, posibly with a media query */
+    font-family: 'Poppins', sans-serif;
+}
+.main{
+    background-color: white;;
+    margin:0;
+    padding:0;
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    /* border: 1px solid black; */
+}
+.main .wave-1{
+    position:relative;
+    width:102%;
+    left:-1px;
+    height:463px;
+    top:170px;
+}
+.main .wave-2{
+    position:relative;
+    width:102%;
+    top:-70px;
+    height: 520px;
+    z-index: 2;
+}
+.main .wave-3{
+    position:relative;
+    width:101%;
+    left:-3px;
+    top:-200px;
+    height: 657px;
+    z-index:3;
+}
+.navigation{
+    position: absolute;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.navigation .logo{
+    padding-left:20px !important;
+    cursor: pointer;
+}
+.navigation .links{
+    padding-right:20px !important;
+    display:flex;
+    align-items: flex-end;
+    width:50%;
+    justify-content: space-around;
+    padding-bottom: 10px !important;
+}
+.navigation .links a{
+    text-decoration: none;
+}
+.links a:nth-child(1){
+    color: #7FDCDC;
+}
+.links a:nth-child(2){
+    color: #5a5a5a;
+}
+.buttonOfMine{
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    /*
+      Show a hand cursor on hover instead of the default arrow cursor
+      (Some argue that we should keep the default arrow cursor for buttons, to be consistent with how desktop operating systems treat buttons.)
+    */
+    cursor: pointer;
+
+    /* default for <button>, but useful for <a> */
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 2px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 2px transparent;
+    border-radius: 20px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.25em 1em !important;
+
+    /* make sure colors have enough contrast! */
+    color: #ffffff;
+    background-color: #FF9B9B;
+}
+.buttonOfMine:active{
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+.title{
+    position:absolute;
+    top: 110px;
+    left: 140px;
+    font-size:52px; /* 50 on 1200px */
+    z-index:1;
+    color:#5a5a5a;
+    font-weight: 800;
+}
+
+/* The doctors and the button in one flex div */
+.doctorsAndBtn{
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    top: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.doctorsAndBtn .buttonOfMine{
+    position: relative;
+    left: 140px;
+    top:-25px
+}
+.doctorsAndBtn img{
+    position: relative;
+    right: 200px;
+}
+.doctorAndText{
+    position:absolute;
+    z-index:10;
+    display:flex;
+    align-items: center;
+    top:474px;
+    left: 60px;
+}
+.doctorAndText p{
+    position:relative;
+    font-weight: 100;
+    color: #5a5a5a;
+    font-size: 37px; /* 35 for 1200px */
+    left:140px;
+}
+.doctorAndText span{
+    color: rgb(39, 39, 39);
+}
+.courses-wrapper{
+    position: absolute;
+    display: flex;
+    width:100%;
+    justify-content: center;
+    z-index: 10;
+    top:1000px;
+}
+.courses{
+    width:55%;
+    display:flex;
+    justify-content: space-around;
+}
+#lastBtn{
+    position:absolute;
+    top:1320px;
+    left:80px;
+    z-index: 10;
+}
+.doctorAndText span:before{
+    content: 'billing and coding';
+    animation: animate infinite 10s;
+}
+@keyframes animate{
+    15%{
+        content: 'billing and coding'
+    }
+    35%{
+        content: 'personal finance'
+    }
+    50%{
+        content: 'billing for group visits'
+    }
+    75%{
+        content: 'how to start a healthcare startup'
+    }
+    100%{
+        content: 'anything from your experts peers'
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    
+}
