@@ -199,14 +199,23 @@ body{
     }
     .title{
         font-size:50px; /* 50 on 1200px */
+        top:110px;
     }
     .main .wave-2{
-        top:-60px;
+        top:-40px;
         width:101.5%;
     }
     .main .wave-3{
         width:102%;
-        top:-210px;
+        top:-190px;
+    }
+    .doctorAndText{
+        position:absolute;
+        z-index:10;
+        display:flex;
+        align-items: center;
+        top:494px;
+        left: 60px;
     }
     .doctorAndText p{
         font-size: 35px; /* 35 for 1200px */
@@ -216,7 +225,7 @@ body{
         top:-15px
     }
     .doctorsAndBtn img{
-        right: 170px;
+        right: 190px;
         top:-5px;
     }
     .courses{
