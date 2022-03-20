@@ -143,7 +143,7 @@ body{
     font-weight: 100;
     color: #5a5a5a;
     font-size: 37px; /* 35 for 1200px */
-    left:140px;
+    left:100px;
 }
 .doctorAndText span{
     color: rgb(39, 39, 39);
@@ -190,5 +190,36 @@ body{
 }
 
 @media only screen and (max-width: 1200px){
-    
+    body,.main{
+        width:1210px;
+        overflow-x: visible;
+    }
+    .main .wave-1{
+        top:190px;
+    }
+    .title{
+        font-size:50px; /* 50 on 1200px */
+    }
+    .main .wave-2{
+        top:-60px;
+        width:101.5%;
+    }
+    .main .wave-3{
+        width:102%;
+        top:-210px;
+    }
+    .doctorAndText p{
+        font-size: 35px; /* 35 for 1200px */
+        left:30px;
+    }
+    .doctorsAndBtn .buttonOfMine{
+        top:-15px
+    }
+    .doctorsAndBtn img{
+        right: 170px;
+        top:-5px;
+    }
+    .courses{
+        width:65%;
+    }
 }
