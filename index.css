@@ -143,7 +143,7 @@ body{
     font-weight: 100;
     color: #5a5a5a;
     font-size: 37px; /* 35 for 1200px */
-    left:100px;
+    left:20px;
 }
 .doctorAndText span{
     color: rgb(39, 39, 39);
@@ -221,5 +221,9 @@ body{
     }
     .courses{
         width:65%;
+    }
+    .doctorsAndBtn img{
+        position: relative;
+        right: 100px;
     }
 }
