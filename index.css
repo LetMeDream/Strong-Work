@@ -32,10 +32,12 @@ body{
     z-index: 2;
 }
 .main .wave-3{
-    position:relative;
+    /* position:relative; */
+    position:absolute;
     width:101%;
     left:-3px;
-    top:-200px;
+    /* top:-200px; */
+    top:768px;
     height: 657px;
     z-index:3;
 }
@@ -206,8 +208,9 @@ body{
         width:101.5%;
     }
     .main .wave-3{
-        width:102%;
-        top:-190px;
+        width:103%;
+        /* top:-190px; */
+        top: 790px;
     }
     .doctorAndText{
         position:absolute;
